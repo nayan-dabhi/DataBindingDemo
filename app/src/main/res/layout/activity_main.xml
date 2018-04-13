@@ -6,6 +6,10 @@
         <variable
             name="user"
             type="com.nd.databindingdemo.model.User" />
+
+        <variable
+            name="handlers"
+            type="com.nd.databindingdemo.ActivityMain.MyClickHandlers" />
     </data>
 
     <android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -40,6 +44,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="bottom|end"
             android:layout_margin="@dimen/fab_margin"
+            android:onClick="@{handlers::onFabClicked}"
             app:srcCompat="@android:drawable/ic_dialog_email" />
     </android.support.design.widget.CoordinatorLayout>
 </layout>
