@@ -25,8 +25,8 @@ public class ActivityMain extends AppCompatActivity {
         setSupportActionBar(binding.toolbar);
 
         user = new User();
-        user.setName("Nayan Dabhi");
-        user.setEmail("nayandabhi96@gmail.com");
+        user.setName("");
+        user.setEmail("");
         binding.setUser(user);
 
         handlers = new MyClickHandlers(this);
@@ -43,6 +43,9 @@ public class ActivityMain extends AppCompatActivity {
 
         public void onFabClicked(View view) {
             Toast.makeText(context, "FAB clicked!", Toast.LENGTH_SHORT).show();
+
+            user.setName("Nayan Dabhi");
+            user.setEmail("nayandabhi96@gmail.com");
         }
 
         public void onButtonClick(View view) {
