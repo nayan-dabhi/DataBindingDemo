@@ -16,6 +16,7 @@ public class ActivityMain extends AppCompatActivity {
         // setContentView(R.layout.activity_main);
 
         ActivityMainBinding binding = DataBindingUtil.setContentView(this, R.layout.activity_main);
+        setSupportActionBar(binding.toolbar);
 
         user = new User();
         user.setName("Nayan Dabhi");
